@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligence System Library | Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Intelligence System <span>Library</span></h1>
+            <div class="analytics-hub">
+                <div class="chart-container">
+                    <canvas id="polarChart"></canvas>
+                </div>
+                <div id="data-stats"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="book-grid">
+            <article class="book-card" data-pages="550" data-label="Python">
+                <div class="image-frame"><img src="img/introducao-a-programacao-com-python.jpg" alt="Python"></div>
+                <div class="content">
+                    <span class="category">Tecnologia</span>
+                    <span class="author">Nilo Ney Coutinho Menezes</span>
+                    <h3>Introdução à Programação com Python</h3>
+                    <p class="creative-text">O guia mestre para dominar a lógica que move o mundo dos dados.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="767" data-label="Psicologia">
+                <div class="image-frame"><img src="img/leis-natureza-humana.jpg" alt="Psicologia"></div>
+                <div class="content">
+                    <span class="category">Comportamento</span>
+                    <span class="author">Robert Greene</span>
+                    <h3>As Leis da Natureza Humana</h3>
+                    <p class="creative-text">Uma imersão brutal nos instintos que moldam nossas decisões.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="434" data-label="Literatura">
+                <div class="image-frame"><img src="img/senhor-dos-aneis.jpg" alt="Literatura"></div>
+                <div class="content">
+                    <span class="category">Épico</span>
+                    <span class="author">J.R.R. Tolkien</span>
+                    <h3>O Senhor dos Anéis</h3>
+                    <p class="creative-text">A jornada definitiva sobre coragem, sacrifício e destino.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="395" data-label="História Real">
+                <div class="image-frame"><img src="img/crimes-vitorianos.jpg" alt="História Real"></div>
+                <div class="content">
+                    <span class="category">Investigação</span>
+                    <span class="author">Kate Clarke et al.</span>
+                    <h3>Crimes Vitorianos Macabros</h3>
+                    <p class="creative-text">Onde a neblina de Londres esconde segredos perturbadores.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="367" data-label="Desenvolvimento">
+                <div class="image-frame"><img src="img/maestria.jpg" alt="Maestria"></div>
+                <div class="content">
+                    <span class="category">Sucesso</span>
+                    <span class="author">Robert Greene</span>
+                    <h3>Maestria</h3>
+                    <p class="creative-text">A estratégia milenar para alcançar o topo do seu campo.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="347" data-label="Religião">
+                <div class="image-frame"><img src="img/historia-eclesiastica.jpg" alt="Religião"></div>
+                <div class="content">
+                    <span class="category">Teologia</span>
+                    <span class="author">Eusébio de Cesareia</span>
+                    <h3>História Eclesiástica</h3>
+                    <p class="creative-text">As fundações históricas que sustentam a fé ocidental.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="393" data-label="Militar">
+                <div class="image-frame"><img src="img/portoes-de-fogo.jpg" alt="Militar"></div>
+                <div class="content">
+                    <span class="category">Guerra</span>
+                    <span class="author">Steven Pressfield</span>
+                    <h3>Portões de Fogo</h3>
+                    <p class="creative-text">A disciplina indomável dos 300 de Esparta nas Termópilas.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="153" data-label="Sociologia">
+                <div class="image-frame"><img src="img/feliz-mundo-novo.jpg" alt="Sociologia"></div>
+                <div class="content">
+                    <span class="category">Sociedade</span>
+                    <span class="author">José Patrício Lustosa</span>
+                    <h3>Feliz Mundo Novo</h3>
+                    <p class="creative-text">Questionamentos profundos sobre o futuro da nossa civilização.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="134" data-label="Antropologia">
+                <div class="image-frame fit-zoom"><img src="img/no-comeco-de-tudo.jpg" alt="Antropologia"></div>
+                <div class="content">
+                    <span class="category">Evolução</span>
+                    <span class="author">Robert Pellegrini</span>
+                    <h3>No Começo de Tudo</h3>
+                    <p class="creative-text">A fascinante trajetória do surgimento da consciência humana.</p>
+                </div>
+            </article>
+
+            <article class="book-card" data-pages="79" data-label="Estratégia">
+                <div class="image-frame"><img src="img/arte-da-guerra.jpg" alt="Estratégia"></div>
+                <div class="content">
+                    <span class="category">Filosofia</span>
+                    <span class="author">Sun Tzu</span>
+                    <h3>A Arte da Guerra</h3>
+                    <p class="creative-text">A sabedoria imortal para vencer batalhas antes de iniciá-las.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Intelligence System Library | <span class="gold-text">Desenvolvido por Emanuel Jose</span>
+            </p>
+
+            <div class="footer-links">
+                <a href="https://github.com/computadoredados603-ctrl" target="_blank">GitHub</a>
+
+                <a href="https://www.linkedin.com/in/emanuel-jose-69a0903aa/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
